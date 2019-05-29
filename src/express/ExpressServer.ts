@@ -4,9 +4,9 @@ import { createExpressServer, useContainer } from 'routing-controllers';
 import { Server } from 'http';
 
 import { ServerConfig } from '@chaika/config';
-import { IContainer } from '../interfaces/IContainer';
 import { Component } from '@chaika/application';
 import { isArray } from 'util';
+import { IContainer } from '../types';
 
 interface Dependencies {
     serverConfig: ServerConfig,

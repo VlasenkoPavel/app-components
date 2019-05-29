@@ -5,6 +5,7 @@ import { Component } from '@chaika/application';
 export interface Dependencies {
     logger: Log4jsLogger;
 }
+
 /**
  * Message formatting code copy-pasted from typeorm/src/logger/FileLogger
  */

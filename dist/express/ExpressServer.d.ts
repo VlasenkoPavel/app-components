@@ -3,8 +3,8 @@ import * as express from 'express';
 import { Logger } from 'log4js';
 import { Server } from 'http';
 import { ServerConfig } from '@chaika/config';
-import { IContainer } from '../interfaces/IContainer';
 import { Component } from '@chaika/application';
+import { IContainer } from '../types';
 interface Dependencies {
     serverConfig: ServerConfig;
     middlewares: Function[] | Function;
