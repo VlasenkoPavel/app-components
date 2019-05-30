@@ -1,22 +1,22 @@
-import { Launcher, LauncherDependencies, Class } from '@chaika/application';
+import { Launcher, LauncherDependencies } from '@chaika/application';
 import { ICommand } from '../interfaces/ICommand';
 
 interface Dependencies extends LauncherDependencies {
-    commands: Class<ICommand>[];
+    commands: ICommand[];
 }
 
 export class CommandLauncher extends Launcher {
 
-    private commandClasses: Class<ICommand>[];
+    private commands: ICommand[];
 
-    constructor({ commands, context }: Dependencies) {
-        super({ context });
-        this.commandClasses = commands || [];
+    constructor({ commands }: Dependencies) {
+        super();
+        this.commands = commands || [];
     }
 
     public async start(): Promise<void> {
         await Promise.all(
-            this.commandClasses.map(command => new command(this.context).execute())
+            this.commands.map(command => command.execute())
         );
     }
 
