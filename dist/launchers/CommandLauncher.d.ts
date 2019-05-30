@@ -1,7 +1,7 @@
 import { Launcher } from "@chaika/application";
-import { Command } from "../interfaces/ICommand";
+import { ICommand } from "../interfaces/ICommand";
 export declare class CommandLauncher extends Launcher {
     private commands;
-    constructor(commands: Command[]);
+    constructor(commands: ICommand[]);
     start(): void;
 }
