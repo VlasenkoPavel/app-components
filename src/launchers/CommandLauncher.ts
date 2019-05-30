@@ -1,8 +1,5 @@
 import { Launcher } from "@chaika/application";
-
-interface Command {
-    execute(): Promise<void>;
-}
+import { Command } from "../interfaces/ICommand";
 
 export class CommandLauncher extends Launcher {
 

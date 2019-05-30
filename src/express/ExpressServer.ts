@@ -6,7 +6,7 @@ import { Server } from 'http';
 import { ServerConfig } from '@chaika/config';
 import { Component } from '@chaika/application';
 import { isArray } from 'util';
-import { IContainer } from '../types';
+import { IContainer } from '..';
 
 interface Dependencies {
     serverConfig: ServerConfig,
