@@ -4,7 +4,7 @@ interface Dependencies extends LauncherDependencies {
     commands: Class<ICommand>[];
 }
 export declare class CommandLauncher extends Launcher {
-    private commands;
+    private commandClasses;
     constructor({ commands, context }: Dependencies);
     start(): Promise<void>;
 }

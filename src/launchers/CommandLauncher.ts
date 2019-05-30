@@ -7,18 +7,18 @@ interface Dependencies extends LauncherDependencies {
 
 export class CommandLauncher extends Launcher {
 
-    private commands: Class<ICommand>[];
+    private commandClasses: Class<ICommand>[];
 
     constructor({ commands, context }: Dependencies) {
         super({ context });
-        this.commands = commands || [];
+        this.commandClasses = commands || [];
     }
 
     public async start(): Promise<void> {
         process.on('exit', () => this.onExit());
 
         await Promise.all(
-            this.commands.map(command => new command(this.context).execute())
+            this.commandClasses.map(command => new command(this.context).execute())
         );
 
         this.onExit();
