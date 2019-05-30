@@ -10,7 +10,7 @@
 
 "@chaika/application@VlasenkoPavel/application#name-injection":
   version "1.0.0"
-  resolved "https://codeload.github.com/VlasenkoPavel/application/tar.gz/25af2975668d64173d6706c290f32ccdfc42175a"
+  resolved "https://codeload.github.com/VlasenkoPavel/application/tar.gz/f82904435b78cadbc60e7c3dd787021bf2864ea6"
   dependencies:
     lodash "^4.17.11"
 
