@@ -10,10 +10,18 @@ export class CommandLauncher extends Launcher {
         this.commands = commands;
     }
 
-    public start(): void {
-        for (const command of this.commands) {
-            command.execute();
-        }
+    public async start(): Promise<void> {
+        process.on('exit', () => this.onExit());
+
+        await Promise.all(
+            this.commands.map(command => command.execute())
+        );
+
+        process.exit(0);
+    }
+
+    protected onExit(): void {
+        this.context.dispose();
     }
 
 }

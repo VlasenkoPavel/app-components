@@ -6,10 +6,13 @@ class CommandLauncher extends application_1.Launcher {
         super();
         this.commands = commands;
     }
-    start() {
-        for (const command of this.commands) {
-            command.execute();
-        }
+    async start() {
+        process.on('exit', () => this.onExit());
+        await Promise.all(this.commands.map(command => command.execute()));
+        process.exit(0);
+    }
+    onExit() {
+        this.context.dispose();
     }
 }
 exports.CommandLauncher = CommandLauncher;
