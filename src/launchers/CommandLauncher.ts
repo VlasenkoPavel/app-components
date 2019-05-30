@@ -15,8 +15,6 @@ export class CommandLauncher extends Launcher {
     }
 
     public async start(): Promise<void> {
-        process.on('exit', () => this.onExit());
-
         await Promise.all(
             this.commandClasses.map(command => new command(this.context).execute())
         );
