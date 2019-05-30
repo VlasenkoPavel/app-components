@@ -1,8 +1,11 @@
-import { Launcher } from "@chaika/application";
-import { ICommand } from "../interfaces/ICommand";
+import { Launcher, LauncherDependencies } from '@chaika/application';
+import { ICommand } from '../interfaces/ICommand';
+interface Dependencies extends LauncherDependencies {
+    commands: ICommand[];
+}
 export declare class CommandLauncher extends Launcher {
     private commands;
-    constructor(commands: ICommand[]);
+    constructor({ commands, context }: Dependencies);
     start(): Promise<void>;
-    protected onExit(): void;
 }
+export {};

@@ -9,10 +9,10 @@ import { isArray } from 'util';
 import { IContainer } from '..';
 
 interface Dependencies {
-    serverConfig: ServerConfig,
-    middlewares: Function[] | Function,
-    logger: Logger,
-    container?: IContainer
+    serverConfig: ServerConfig;
+    middlewares: Function[] | Function;
+    logger: Logger;
+    container?: IContainer;
 }
 
 export class ExpressServer extends Component {

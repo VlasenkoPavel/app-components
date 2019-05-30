@@ -3,8 +3,8 @@ import { PostgresConfig } from '@chaika/config';
 import { Component } from '@chaika/application';
 
 interface Dependencies {
-    postgresConfig: PostgresConfig,
-    typeOrmLogger?: Logger
+    postgresConfig: PostgresConfig;
+    typeOrmLogger?: Logger;
 }
 
 export class TypeOrmConnector extends Component {

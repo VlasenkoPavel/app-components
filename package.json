@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "node_modules/.bin/tsc",
+    "build": "./node_modules/.bin/tslint --force 'src/**/*.ts' && ./node_modules/.bin/tsc --project tsconfig.json",
     "update": "rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && yarn"
   },
   "dependencies": {

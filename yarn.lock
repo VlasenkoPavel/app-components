@@ -10,18 +10,17 @@
 
 "@chaika/application@VlasenkoPavel/application#name-injection":
   version "1.0.0"
-  resolved "https://codeload.github.com/VlasenkoPavel/application/tar.gz/72ba290867f0866768de9d1ef54a34950a19b0fb"
+  resolved "https://codeload.github.com/VlasenkoPavel/application/tar.gz/c0e857ef6072a8326fd670e04934341dedd52398"
   dependencies:
     lodash "^4.17.11"
 
 "@chaika/config@VlasenkoPavel/config#master":
   version "0.0.1"
-  resolved "https://codeload.github.com/VlasenkoPavel/config/tar.gz/8f7d5ab9239ed714b1f2a6407f9515eb0ec22a47"
+  resolved "https://codeload.github.com/VlasenkoPavel/config/tar.gz/c1090f8fe611a7a87706eb416314796b79f4138e"
   dependencies:
     class-transformer "0.1.9"
     class-validator "^0.8.1"
     deep-extend "0.6.0"
-    inversify "5.0.1"
 
 "@fimbul/bifrost@^0.17.0":
   version "0.17.0"
@@ -683,7 +682,7 @@ inherits@2, inherits@2.0.3, inherits@~2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
-inversify@5.0.1, inversify@^5.0.0:
+inversify@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.0.1.tgz#500d709b1434896ce5a0d58915c4a4210e34fb6e"
   integrity sha512-Ieh06s48WnEYGcqHepdsJUIJUXpwH5o5vodAX+DK2JA/gjy4EbEcQZxw+uFfzysmKjiLXGYwNG3qDZsKVMcINQ==
@@ -1419,9 +1418,9 @@ tsutils@^2.27.2, tsutils@^2.29.0:
     tslib "^1.8.1"
 
 tsutils@^3.0.0, tsutils@^3.5.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.11.0.tgz#a180bb9f110608810ddb513067e59cd4e4c23474"
-  integrity sha512-RRtGX1FVfHm1+P9XVqN+RxqUa8ZCZ2LjaPyaRUQH7Wvn9cYAkpz/cZKy+BWU/+fncFqjW/+PVgRWF4Ky5IGbjQ==
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.12.0.tgz#2d236b98dc07bff9e49c7355a48a78d20e15e58a"
+  integrity sha512-64KxDOb3+5ZVbz6NDZlCtOHstLk9+W96Y7d5Z/s5ge92gLaunxDeXYahvB7Rhl1dbaa3ifyq/W53o4mshIV1Tw==
   dependencies:
     tslib "^1.8.1"
 
@@ -1453,9 +1452,9 @@ typeorm@0.2.11:
     yargs "^12.0.5"
 
 typescript@^3.4.5:
-  version "3.4.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
-  integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.1.tgz#ba72a6a600b2158139c5dd8850f700e231464202"
+  integrity sha512-64HkdiRv1yYZsSe4xC1WVgamNigVYjlssIoaH2HcZF0+ijsk5YK2g0G34w9wJkze8+5ow4STd22AynfO6ZYYLw==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
