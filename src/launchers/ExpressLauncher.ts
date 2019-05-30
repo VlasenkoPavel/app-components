@@ -9,11 +9,7 @@ export class ExpressLauncher extends Launcher {
         process.on('SIGUSR2', () => process.exit());
         process.on('uncaughtException', () => process.exit());
         process.on('unhandledRejection', () => process.exit());
-        process.on('exit', () => this.onExit());
-    }
-
-    protected onExit(): void {
-        this.context.dispose();
+        process.on('exit', () => this.stop());
     }
 
 }

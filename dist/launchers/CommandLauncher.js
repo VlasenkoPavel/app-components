@@ -8,7 +8,6 @@ class CommandLauncher extends application_1.Launcher {
     }
     async start() {
         await Promise.all(this.commandClasses.map(command => new command(this.context).execute()));
-        this.onExit();
     }
 }
 exports.CommandLauncher = CommandLauncher;

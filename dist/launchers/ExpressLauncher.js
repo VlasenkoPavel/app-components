@@ -9,10 +9,7 @@ class ExpressLauncher extends application_1.Launcher {
         process.on('SIGUSR2', () => process.exit());
         process.on('uncaughtException', () => process.exit());
         process.on('unhandledRejection', () => process.exit());
-        process.on('exit', () => this.onExit());
-    }
-    onExit() {
-        this.context.dispose();
+        process.on('exit', () => this.stop());
     }
 }
 exports.ExpressLauncher = ExpressLauncher;

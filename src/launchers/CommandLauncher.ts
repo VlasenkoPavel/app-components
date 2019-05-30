@@ -18,8 +18,6 @@ export class CommandLauncher extends Launcher {
         await Promise.all(
             this.commandClasses.map(command => new command(this.context).execute())
         );
-
-        this.onExit();
     }
 
 }
