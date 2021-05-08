@@ -13,7 +13,7 @@
     "@chaika/config": "VlasenkoPavel/config#master",
     "class-validator": "^0.8.1",
     "express": "4.16.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "log4js": "3.0.6",
     "reflect-metadata": "0.1.12",
     "routing-controllers": "0.7.7",
